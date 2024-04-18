@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pendular Noise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="generator">
+  <div class="[ stack ] [ generator__controls ]">
+    <!-- Grid size -->
+    <div class="generator__control generator__control--range">
+      <label class="generator__control-label" for="pendulaSlider">Pendula</label>
+      <input class="range-input" type="range" name="pendula" id="pendulaSlider" aria-labelledby="pendulaLabel" min="0" max="4" step="1" value="4">
+    </div>
+    <!-- Variance -->
+    <div class="generator__control generator__control--range">
+      <label class="generator__control-label" for="noise">Noise</label>
+      <input class="range-input" type="range" name="noise" id="noiseSlider" min="0" max="4" value="2" step="1">
+    </div>
+    <!-- Button -->
+    <div class="generator__buttons">
+      <button class="toggle" id="toggleButton" disabled>>>></button>
+    </div>
+  </div>
+
+</div>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
