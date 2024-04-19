@@ -1,13 +1,13 @@
 import * as Tone from "https://cdn.skypack.dev/tone@14.7.77";
 
 //create audio context
-const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+//const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
 //start audio context
-audioContext.resume();
+//audioContext.resume();
 
 //set tone.js to new audio context
-Tone.setContext(audioContext);
+//Tone.setContext(audioContext);
 
 //synth declarations
 let stopped = true;
