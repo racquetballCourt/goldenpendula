@@ -41,7 +41,7 @@ playerN.volume.value = -18;
 //handle pendula volume slider, map input value [0-4] to db value [options]
 document.querySelector("#pendulaSlider").addEventListener("input", (e) => {
   const val = parseInt(e.target.value);
-  const options = [-24, -18, -12, -6, 0];
+  const options = [-36,-35,-34,-33,-32,-31,-30,-29,-28,-27,-26,-25,-24,-23,-22,-21,-20,-19,-18,-17,-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0];
 
   playerA.volume.value = options[val];
   playerB.volume.value = options[val];
@@ -52,7 +52,7 @@ document.querySelector("#pendulaSlider").addEventListener("input", (e) => {
 //handle noise volume slider, map input value [0-4] to db value [options]
 document.querySelector("#noiseSlider").addEventListener("input",(e) => {
   const val = parseInt(e.target.value);
-  const options = [-24, -21, -18, -15, -12];
+  const options = [-36,-35,-34,-33,-32,-31,-30,-29,-28,-27,-26,-25,-24,-23,-22,-21,-20,-19,-18,-17,-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0];
 
   playerN.volume.value = options[val];
 
